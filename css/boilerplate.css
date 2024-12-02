@@ -1,0 +1,112 @@
+/* CSS Reset */
+/* This is the boilerplate I put in my every project. 
+   I usually just use ChatGPT for this */
+   *,
+   *::before,
+   *::after {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   html {
+       font-size: 16px; /* Base font size */
+       scroll-behavior: smooth;
+   }
+   
+   body {
+       font-family: 'Arial', sans-serif;
+       line-height: 1.6;
+       background-color: #f9f9f9;
+       color: #333;
+       margin: 0;
+       padding: 0;
+   }
+   
+   /* Container */
+   .container {
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 1rem;
+   }
+   
+   /* Typography */
+   h1, h2, h3, h4, h5, h6 {
+       font-weight: bold;
+       margin-bottom: 1rem;
+       color: #222;
+   }
+   
+   p {
+       margin-bottom: 1rem;
+       color: #555;
+   }
+   
+   a {
+       color: #3498db;
+       text-decoration: none;
+   }
+   
+   a:hover {
+       text-decoration: underline;
+   }
+   
+   /* Header and Footer */
+   header, footer {
+       background-color: #1269cc;
+       color: #fff;
+       padding: 1.5rem 0;
+       text-align: center;
+   }
+   
+   /* Navigation Bar */
+   nav {
+       background-color: #333;
+       padding: 1rem;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+   
+   nav a {
+       color: #fff;
+       text-transform: uppercase;
+       font-size: 0.9rem;
+       padding: 0.5rem 1rem;
+       border-radius: 5px;
+   }
+   
+   nav a:hover {
+       background-color: #555;
+   }
+   
+   /* Buttons */
+   button {
+       padding: 0.75rem 1.5rem;
+       background-color: #3498db;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       font-size: 1rem;
+       transition: background-color 0.3s ease;
+   }
+   
+   button:hover {
+       background-color: #1d78d4;
+   }
+   
+   /* Forms */
+   input, textarea, select {
+       width: 100%;
+       padding: 0.75rem;
+       margin-bottom: 1rem;
+       border: 1px solid #ddd;
+       border-radius: 5px;
+       font-size: 1rem;
+   }
+   
+   input:focus, textarea:focus, select:focus {
+       border-color: #3498db;
+       outline: none;
+   }
