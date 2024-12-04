@@ -2,8 +2,10 @@
 body {
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* this will center the game status bar */
@@ -12,25 +14,47 @@ body {
     display: flex;
 }
 
+/* This will put the boxes inside to the left and right side */
 .player-boxes {
     border: 2px solid red;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 250px;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px;
+    position: relative;
 }
 
+/* This will put the vs-text in the center of the two boxes */
+.player-boxes h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* This will control the size of the player boxes */
 .player-1-box, .player-2-box {
-    border: 2px solid lightblue;
+    border: 2px solid blue;
     margin: 15px, 15px, 15px, 15px;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
+/* This will fit the images to the size of the player-box */
+.box-1-image, .box-2-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* This will fit the buttons and spaced evenly */
 .choice-buttons {
     border: 2px solid red;
     display: flex;
@@ -41,16 +65,19 @@ body {
     width: 500px;
 }
 
+/* This controls the size of the buttons */
 .rock-button, .paper-button, .scissors-button {
     width: 105px;
 }
 
+/* This controls the scoreboard */
 .scoreboard {
     border: 2px solid red;
     display: flex;
     padding: 20px;
 }
 
+/* This controls the text inside the score board */
 .player-score, .computer-score {
     margin-left: 20px;
     margin-right: 20px;
