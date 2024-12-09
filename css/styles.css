@@ -45,15 +45,17 @@ body {
     text-align: center;
 }
 
-/* This will control the size of the player boxes */
+/* Ensure the player boxes are properly aligned */
 .player-1-box, .player-2-box {
     border: 3px solid #00183e;
-    margin: 15px, 15px, 15px, 15px;
     width: 250px;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* This will fit the images to the size of the player-box */
+/* Fit the images inside the player boxes */
 .box-1-image, .box-2-image {
     max-width: 100%;
     max-height: 100%;
