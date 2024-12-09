@@ -10,13 +10,19 @@ body {
 
 /* this will center the game status bar */
 .game-status-bar {
-    border: 2px solid red;
+    background-color: gray;
     display: flex;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* This will control the game status text */
+.game-status {
+    color: white;
 }
 
 /* This will put the boxes inside to the left and right side */
 .player-boxes {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -41,7 +47,7 @@ body {
 
 /* This will control the size of the player boxes */
 .player-1-box, .player-2-box {
-    border: 2px solid blue;
+    border: 3px solid #00183e;
     margin: 15px, 15px, 15px, 15px;
     width: 250px;
     height: 250px;
@@ -56,7 +62,6 @@ body {
 
 /* This will fit the buttons and spaced evenly */
 .choice-buttons {
-    border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -72,13 +77,23 @@ body {
 
 /* This controls the scoreboard */
 .scoreboard {
-    border: 2px solid red;
+    border-radius: 8px;
+    background-color: #00183e;
     display: flex;
     padding: 20px;
 }
 
 /* This controls the text inside the score board */
 .player-score, .computer-score {
+    color: white;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+/* This controls the bar the visually separates the scores */
+.score-separator {
+    width: 2px;
+    height: 50%;
+    background-color: black;
+    margin: 0 20px; 
 }
